@@ -11,11 +11,11 @@ pub let g_DONE_FLAG : Flags = 0b10
 pub let g_ERROR_FLAG : Flags = 0b11
 
 ///|
-pub fn lor(self : Flags, other : Flags) -> Flags {
+pub fn Flags::lor(self : Flags, other : Flags) -> Flags {
   self._ | other._
 }
 
 ///|
-pub fn land(self : Flags, other : Flags) -> Flags {
+pub fn Flags::land(self : Flags, other : Flags) -> Flags {
   self._ & other._
 }
