@@ -1,5 +1,4 @@
 import {
-  "bobzhang/flags/lib",
 }
 
 pkgtype(kind: "executable")
