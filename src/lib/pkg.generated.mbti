@@ -1,0 +1,28 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "bobzhang/flags/lib"
+
+import {
+  "moonbitlang/core/debug",
+}
+
+// Values
+pub let g_DONE_FLAG : Flags
+
+pub let g_ERROR_FLAG : Flags
+
+pub let g_READY_FLAG : Flags
+
+// Errors
+
+// Types and methods
+#derive(Compare, Eq, @debug.Debug)
+pub struct Flags(Int32)
+pub fn Flags::land(Self, Self) -> Self
+pub fn Flags::lor(Self, Self) -> Self
+pub impl BitAnd for Flags
+pub impl BitOr for Flags
+pub impl Show for Flags
+
+// Type aliases
+
+// Traits
